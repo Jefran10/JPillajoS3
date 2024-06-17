@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JPillajoS3.View.vRegistro"
+             Title="Registro">
+    <VerticalStackLayout Spacing="20" Padding="30" BackgroundColor="#f7f7f7">
+        <!-- Title -->
+        <Label 
+            Text="Registro"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#333"
+            Margin="0,50,0,10" />
+
+        <!-- Registration Icon -->
+        <Image 
+            Source="https://example.com/path-to-your-registration-icon.png"
+            HeightRequest="100"
+            WidthRequest="100"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20" />
+
+        <!-- Username Entry -->
+        <Entry 
+            x:Name="usernameEntry"
+            Placeholder="Nombre de Usuario"
+            FontSize="18"
+            BackgroundColor="#fff"
+            TextColor="#333"
+            Margin="0,0,0,10"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center" />
+
+
+
+        <!-- Password Entry -->
+        <Entry 
+            x:Name="passwordEntry"
+            Placeholder="Contraseña"
+            FontSize="18"
+            IsPassword="True"
+            BackgroundColor="#fff"
+            TextColor="#333"
+            Margin="0,0,0,10"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center" />
+
+
+        <!-- Register Button -->
+        <Button 
+            Text="Registrar"
+            FontSize="18"
+            BackgroundColor="#28a745"
+            TextColor="#fff"
+            CornerRadius="25"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked" />
+        
+    </VerticalStackLayout>
+</ContentPage>

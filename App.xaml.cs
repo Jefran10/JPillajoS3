@@ -1,4 +1,6 @@
-﻿namespace JPillajoS3
+﻿using JPillajoS3.View;
+
+namespace JPillajoS3
 {
     public partial class App : Application
     {
@@ -6,7 +8,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new vLogin());
+
         }
     }
 }

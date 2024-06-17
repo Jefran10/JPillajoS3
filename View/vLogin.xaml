@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JPillajoS3.View.vLogin"
+             Title="Login">
+
+    <VerticalStackLayout Spacing="20" Padding="30" BackgroundColor="#f7f7f7">
+        <!-- Title -->
+        <Label 
+            Text="Login"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#333"
+            Margin="0,50,0,10" />
+
+        <!-- Login Icon -->
+        <Image 
+            Source="login.png"
+            HeightRequest="100"
+            WidthRequest="100"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20" />
+
+        <!-- Username and Password Grid -->
+        <Grid RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Username Entry -->
+            <Label 
+                Text="Usuario:"
+                FontSize="18"
+                Grid.Column="0"
+                TextColor="#333"
+                VerticalOptions="Center" />
+            <Entry 
+                x:Name="usernameEntry"
+                Placeholder=""
+                FontSize="18"
+                BackgroundColor="WhiteSmoke"
+                TextColor="#333"
+                Grid.Column="1"
+                Keyboard="Email"
+                VerticalOptions="Center" />
+
+            <!-- Password Entry -->
+            <Label 
+                Text="Contraseña"
+                FontSize="18"
+                Grid.Column="0"
+                TextColor="#333"
+                Grid.Row="1"
+                VerticalOptions="Center" 
+                    Grid.RowSpan="2"
+/>
+            <Entry 
+                x:Name="passwordEntry"
+                Placeholder=""
+                FontSize="18"
+                IsPassword="True"
+                BackgroundColor="WhiteSmoke"
+                TextColor="#333"
+                Grid.Column="1"
+                Grid.Row="1"
+                VerticalOptions="Center" />
+        </Grid>
+
+        <Button 
+            Text="Login"
+            FontSize="18"
+            BackgroundColor="#007bff"
+            TextColor="#fff"
+            CornerRadius="25"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"/>
+        <Button 
+            Text="Register"
+            FontSize="18"
+            BackgroundColor="#28a745"
+            TextColor="#fff"
+            CornerRadius="25"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked_2"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>
